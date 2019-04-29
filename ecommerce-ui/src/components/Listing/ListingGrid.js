@@ -2,7 +2,7 @@ import React from 'react';
 import Listing from './Listing';
 import listings from '../../airbnbs.json';
 
-class Listing extends React.Component {
+class ListingGrid extends React.Component {
   constructor(props) {
     super(props)
   }
@@ -17,3 +17,5 @@ class Listing extends React.Component {
     )
   }
 }
+
+export default ListingGrid;

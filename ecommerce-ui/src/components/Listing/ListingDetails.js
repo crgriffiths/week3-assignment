@@ -15,9 +15,11 @@ class ListingDetails extends React.Component {
           <h2>{this.props.title}</h2>
         </div>
         <div>
-          <h3>{this.props.payment.cost}{}</h3>
+          <p>{this.props.payment.cost}{this.props.payment.description.length > 0 ? ` ${this.props.payment.description.length}` : ""}</p>
         </div>
-
+        <div>
+          <p><span>{this.props.rating.stars} out of 5 ({this.props.rating.reviews}){this.props.host.isSuperhost ? "  \u2022 Superhost" : ""}</span></p>
+        </div>
       </div>
     )
   }
