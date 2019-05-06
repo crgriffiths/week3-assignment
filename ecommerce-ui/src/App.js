@@ -1,8 +1,7 @@
 import React from 'react';
-import ListingGrid from './components/Listing/ListingGrid';
-import Header from './components/Header/Header';
 import './App.css';
-import listings from './airbnbs.json';
+import ListingApp from './components/ListingApp';
+
 
 class App extends React.Component {
   constructor(props) {
@@ -16,8 +15,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Header />
-        <ListingGrid/>
+        <ListingApp/>
       </div>
     );
   }
