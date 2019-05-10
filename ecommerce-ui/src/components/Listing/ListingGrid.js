@@ -9,9 +9,14 @@ class ListingGrid extends React.Component {
 
   render() {
     return (
-      <div className="listing-grid">
-        {listings.map((listing,idx) => (
-          <Listing listing={listing} key={idx} />
+      <div className="listing-grid d-flex row">
+        {listings.map((listing,index) => (
+          <Listing 
+            listing={listing} 
+            key={index} 
+            index={index}
+            onAddToCart ={this.props.onAddToCart}
+          />
         ))}
       </div>
     )
