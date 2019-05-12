@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cart item renders in cart when added 1`] = `
+<li>
+  <div
+    className="d-flex align-items-center"
+  >
+    <div
+      className="col-3 px-1"
+    >
+      <img
+        src="https://images.unsplash.com/photo-1490806230066-f7e6f7bf5052?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2ca889535ea01f912f94ac4ddf0034e0&auto=format&fit=crop&w=500&q=80"
+      />
+    </div>
+    <p
+      className="col-6 px-1"
+    >
+      Centrally-located Manhattan studio
+    </p>
+    <p
+      className="col-2 px-1"
+    >
+      $
+      105
+    </p>
+    <button
+      className="remove-listing"
+      onClick={[Function]}
+    />
+  </div>
+</li>
+`;

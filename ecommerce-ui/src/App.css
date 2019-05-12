@@ -50,6 +50,7 @@ header .logo {
   padding: 10px;
   position: absolute;
   z-index: 1000000;
+  color: rgb(53, 53, 53);
   background: #fff;
   width: 300px;
   top: 100%;
