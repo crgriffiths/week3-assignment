@@ -18,8 +18,9 @@ class Header extends React.Component {
   cartClicked = () => {
     if (this.state.isCartDisplayed) {
       this.setState({isCartDisplayed: false});
-    } 
-    this.setState({isCartDisplayed:true});
+    } else {
+      this.setState({isCartDisplayed:true});
+    }
   }
   render() {
     return (
