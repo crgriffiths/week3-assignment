@@ -1,5 +1,6 @@
 import React from 'react';
 import CartItem from './CartItem'
+import PropTypes from 'prop-types';
 
 class Cart extends React.Component {
   constructor(props) {
@@ -27,5 +28,10 @@ class Cart extends React.Component {
     )
   }
 }
+
+Cart.propTypes = {
+  onRemoveFromCart: PropTypes.func,
+  cartTotal: PropTypes.number
+};
 
 export default Cart;

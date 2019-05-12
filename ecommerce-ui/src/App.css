@@ -31,4 +31,29 @@ button.remove-listing:after {
 }
 header {
   padding: 15px 0;
+  background: rgb(65, 65, 65);
+  color: #fff;
+}
+header svg {
+  fill: #fff;
+}
+header .logo {
+  font-size: 20px;
+  font-weight: 600;
+  font-style: italic;
+}
+.cart {
+  position: relative;
+}
+
+.cartList {
+  padding: 10px;
+  position: absolute;
+  z-index: 1000000;
+  background: #fff;
+  width: 300px;
+  top: 100%;
+  right: 0;
+  border: 1px solid darkgrey;
+  border-radius: 5px;
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class ListingDetails extends React.Component {
   constructor(props) {
@@ -27,5 +28,16 @@ class ListingDetails extends React.Component {
     )
   }
 }
+
+ListingDetails.propTypes = {
+  index: PropTypes.number,
+  houseType: PropTypes.string,
+  location: PropTypes.string,
+  title: PropTypes.string,
+  payment: PropTypes.object,
+  host: PropTypes.object,
+  rating: PropTypes.object,
+  onAddToCart: PropTypes.func
+};
 
 export default ListingDetails;

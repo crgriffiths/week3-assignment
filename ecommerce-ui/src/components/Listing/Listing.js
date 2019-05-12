@@ -1,6 +1,7 @@
 import React from 'react';
 import ListingImage from './ListingImage';
 import ListingDetails from './ListingDetails';
+import PropTypes from 'prop-types';
 
 class Listing extends React.Component {
   constructor(props) {
@@ -25,5 +26,11 @@ class Listing extends React.Component {
     )
   }
 }
+
+Listing.propTypes = {
+  index: PropTypes.number,
+  listing: PropTypes.object,
+  onAddToCart: PropTypes.func
+};
 
 export default Listing;

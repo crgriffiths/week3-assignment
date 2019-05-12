@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 class ListingImage extends React.Component {
   constructor(props) {
@@ -13,5 +14,10 @@ class ListingImage extends React.Component {
     )
   }
 }
+
+ListingImage.propTypes = {
+  image: PropTypes.string,
+  alt: PropTypes.string
+};
 
 export default ListingImage;
